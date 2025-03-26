@@ -5,7 +5,7 @@ This section contains notes containing instruction on how to configure various c
 ### Table of Content
 
 + [Configuring Network.](CT_network_configuration.md)
-
++ [Configuring KSCTL utility.](CT_ksctl_configuration.md)
 
 [Back to main page](../README.md)
 
