@@ -171,4 +171,4 @@
 </pre>
 
 
-<- [Back to previous page](README.md)
+[<<< Back to previous page](README.md)

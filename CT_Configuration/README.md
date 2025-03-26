@@ -4,8 +4,8 @@ This section contains notes containing instruction on how to configure various c
 
 ### Table of Content
 
-+ [Configuring Network.)(CT_network_configuration.md)
++ [Configuring Network.](CT_network_configuration.md)
 
 
-<- [Back to main page](../README.md)
+[<<< Back to main page](../README.md)
 
