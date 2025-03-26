@@ -1,10 +1,10 @@
 # CipherTrust Data Security Platform
 
-I've created this repository to upload all my notes related to CipherTrust plaform. It contains all the consolidated notes that I made in the past few years. It well formatted, organized, verified and up-to date.
+I've created this repository to upload all my notes related to the CipherTrust platform. It contains all the consolidated notes that I've made over the past few years. They are well-formatted, organized, verified, and up-to-date.
 
 
 ### Table of Content
 
 + Introduction to CipherTrust.
-+ Configuring CipherTrust.
++ [Configuring CipherTrust.](CT_Configuration/README.md)
 
