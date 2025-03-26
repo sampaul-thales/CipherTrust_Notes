@@ -1,24 +1,35 @@
-## Network Configuration for Virtual CipherTrust Manager
+## Network Configuration for CipherTrust Manager
 
-### Initial Setup
+This section explains how to set up CipherTrust Manager on a network. It covers the following topics:
+
++ Initial configuration of CipherTrust immediately after it has been deployed.
++ Configuring IPv4 address.
++ Setting a hostname.
++ Setting timezone.
+
+<br>
+
+### Initial Setup after deployment
 + After deploying vCipherTrust Manager, pressing ENTER on the console screen should display the DHCP IP address.
 + Enter that IP address in your browser and it should present you with a screen asking for public key for login.
 + Open Puttygen or any other similar tool to generated keys for SSH login. Paste the public key information in CT web interface and submit.
 + After few mins, you should see a login screen. Use username 'admin' and password 'admin' to login.
 + You will be prompted to immediately change the default password.
 + A login screen would appear again after changing the password. Login as admin to check if your new password works.
-+ Logout and close.
++ Logout and close the web interface for CT.
 
+<br>
 
 ### SSH Login
 + CipherManager uses 'ksadmin' as the username to login for initial setup.
 + Use your SSH keys to login as 'ksadmin' to check if you're able to login.
 
 
+<br>
 
 ### Network Configuration
 
-#### Get the list of all available network interface.
+#### - Display the list of available network interfaces.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli device
 	DEVICE       TYPE      STATE      CONNECTION
@@ -27,7 +38,7 @@
 	leia0        bridge    unmanaged  --
 </pre>
 
-#### Get information about a network interface.
+#### - Display information about a network interface.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli device show enp1s0
 	GENERAL.DEVICE:                         enp1s0
@@ -53,25 +64,25 @@
 	IP6.ROUTE[2]:                           dst = fe80::/64, nh = ::, mt = 100, table=100
 </pre>
 
-#### Set static IP to CTM.
+#### - Assign a static IPv4 address to an interface.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli conn modify "Wired connection 1" ipv4.method manual ipv4.address 10.164.50.16/16 ipv4.gateway 10.164.50.1 ipv4.dns 10.164.50.1
 </pre>
 
-#### Apply changes and activate the network interface.
+#### - Apply the changes and activate the network interface.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli conn up "Wired connection 1"
 	Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/2)
 </pre>
 
-#### (Optionally) Disable IPv6 if you're not using it.
+#### - (Optionally) Disable IPv6 if you're not using it.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli conn modify "Wired connection 1" ipv6.method disabled
 	ksadmin@ciphertrust:~$ nmcli conn up "Wired connection 1"
 	Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3)
 </pre>
 
-#### Interface information after applying changes.
+#### - Interface information after applying changes.
 <pre>
 	ksadmin@ciphertrust:~$ nmcli device show enp1s0
 	GENERAL.DEVICE:                         enp1s0
@@ -92,38 +103,39 @@
 	IP6.GATEWAY:                            --
 </pre>
 
+<br>
 
 ### Changing hostname of CipherTrust Manager
 
-#### To display current hostname.
+#### - To display current hostname.
 <pre>
 	ksadmin@ciphertrust:~$ kscfg system hostname get
 	ciphertrust
 </pre>
 
-#### To change the hostname.
+#### - To change the hostname.
 <pre>
 	ksadmin@ciphertrust:~$ kscfg system hostname set -n vCipherTrust-I
 	Note: please run "sudo systemctl restart keysecure" to have new hostname effective in CipherTrust Manager
 </pre>
 
-#### Restart KeySecure service.
+#### - Restart KeySecure service.
 <pre>
 	ksadmin@ciphertrust:~$ sudo systemctl restart keysecure
 </pre>
 
-#### Check for hostname again.
+#### - Check for hostname again.
 <pre>
 	ksadmin@ciphertrust:~$ kscfg system hostname get
 	vCipherTrust-I
 </pre>
 
 
-
+<BR>
 
 ### Changing timezone of CipherTrust Manager.
 
-#### Check the current timezone. 
+#### - Check the current timezone. 
 <pre>
 	ksadmin@ciphertrust:~$ timedatectl
         	       Local time: Tue 2025-03-25 18:48:14 UTC
@@ -136,7 +148,7 @@
 </pre>
 
 	  
-#### Display list of all timezone codes.
+#### - Display list of all timezone codes.
 <pre>
 	ksadmin@ciphertrust:~$ timedatectl list-timezones | grep US
 	US/Alaska
@@ -152,13 +164,13 @@
 </pre>
 
 
-#### Set timezone for your location.
+#### - Set timezone for your location.
 <pre>
 	ksadmin@ciphertrust:~$ sudo timedatectl set-timezone Canada/Pacific
 </pre>
 
 
-#### Check timezone again.
+#### - Check timezone again.
 <pre>
 	ksadmin@ciphertrust:~$ timedatectl
         	       Local time: Tue 2025-03-25 11:51:32 PDT
@@ -170,5 +182,4 @@
         	  RTC in local TZ: no
 </pre>
 
-
-[<<< Back to previous page](README.md)
+[Back to previous page](README.md)

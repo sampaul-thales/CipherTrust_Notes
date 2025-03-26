@@ -7,5 +7,5 @@ This section contains notes containing instruction on how to configure various c
 + [Configuring Network.](CT_network_configuration.md)
 
 
-[<<< Back to main page](../README.md)
+[Back to main page](../README.md)
 
