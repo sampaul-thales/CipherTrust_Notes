@@ -74,6 +74,7 @@ Hostname:     vciphertrust-i.daenerys.home
 Partitions:   "sp_sehsm3"
 </pre>
 
+<BR>
 
 ### Setup RoT for CipherTrust using ksctl utility.
 
@@ -142,10 +143,19 @@ Are you really sure you want to continue? [y/N] y
 + Login as an administrator.
 + Expand "Admin Settings" > "Root of Trust".
 + Read the warning that resetting CipherTrust Manager will delete all existing data. Click 'Yes, configure an HSM' if you are prepared to proceed with the reset.
+![P1](https://github.com/user-attachments/assets/c1b55987-9233-4be0-b040-320164dda014)
+
 + From the list of supported Hardware Security Modules, select "Thales Luna Network HSM" and then click "Next".
+![P2](https://github.com/user-attachments/assets/2988d7cc-19d8-48b2-bd55-24c8009b237d)
+
 + Enter the required information and upload the certificates and the key file. Click "next".
+![P3](https://github.com/user-attachments/assets/1549bb39-f447-40bb-a1a8-584a53ef76b5)
+
 + Click on "Confirm loss of key material and system restart!".
+![P4](https://github.com/user-attachments/assets/e0e73e8a-1e5c-4df6-92bb-e4f9c7013179)
+
 + Wait for the setup to complete. You may get logged out upon completion of RoT setup.
+![P5](https://github.com/user-attachments/assets/f4aa20c9-aae8-4153-b210-47ddb69ae8b2)
 
 > [!NOTE]  
 > Upon completion of the RoT setup, you will be required to log in as the user 'admin' with the default password 'admin'. You will be forced to change the password upon successful login.
