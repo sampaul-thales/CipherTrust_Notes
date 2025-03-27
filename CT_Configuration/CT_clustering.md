@@ -57,7 +57,7 @@ This section of my notes describes how to set up a cluster of two or more Cipher
 > [!TIP]
 > Instead of entering the password for every KSCTL command, you could store it as KSCTL_PASSWORD environment variable.
 <pre>
-sampaul@ct-ub2204:~$ export KSCTL_PASSWORD=<my_ciphertrust_manager_password>
+sampaul@ct-ub2204:~$ export KSCTL_PASSWORD=--my_ciphertrust_manager_password--
 </pre>
 
 #### - Check if a cluster already exists.
