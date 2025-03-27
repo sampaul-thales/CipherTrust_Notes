@@ -159,3 +159,6 @@ Are you really sure you want to continue? [y/N] y
 
 > [!NOTE]  
 > Upon completion of the RoT setup, you will be required to log in as the user 'admin' with the default password 'admin'. You will be forced to change the password upon successful login.
+
+<br>
+[Back to previous page](README.md)
