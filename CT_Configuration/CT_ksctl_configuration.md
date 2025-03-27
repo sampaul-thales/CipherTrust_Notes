@@ -19,14 +19,8 @@ In this section, I will show you how to configure the KSCTL utility. KSCTL is a 
 #### Another way to download ksctl.
 - Open your CipherTrust Manager's user interface.
 - Look for the "API & CLI Documentation" link at the bottom-right corner of the page and click on it.
-![ksctl_1](https://github.com/user-attachments/assets/d27972bc-645a-46e5-ac5c-387e4cea6194)
-
 - On the API playground page, find the "CLI Guide" option in the top-left corner and click on it.
-![ksctl_2](https://github.com/user-attachments/assets/359e7681-5232-4af8-85cf-b9032c3e41ea)
-
 - You should now see a download option labelled "CLI" in the top-right corner of your screen. Click on this to download the CLI.
-![ksctl_3](https://github.com/user-attachments/assets/086c4fda-3dc4-4bc1-9df5-4d667b6e6b14)
-
 - The downloaded ZIP file contains executables for Windows, Linux, and Darwin. Copy the one you need.
 <pre>
 	sampaul@ct-ub2204:~$ unzip ksctl_images.zip
