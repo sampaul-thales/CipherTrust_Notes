@@ -79,16 +79,21 @@ server.pem
 + Expand "Admin Settings" > "Root of Trust".
 
 + If you've already setup a primary member, then you should be able to see it listed as  Configured HSMs.
+![HA1](https://github.com/user-attachments/assets/b3b3d451-6c63-4c2f-add7-a155fa1259b4)
 
 + Click on "Add" option to open "Add to High Availability (HA) Group" wizard. Click "Next" when you're ready.
+![HA-2](https://github.com/user-attachments/assets/868dc5aa-ae19-4411-8a64-978e6542ff99)
 
 + Input all required information and HSM certificate. Optionally, select "Preserve existing data on this partition" option, if the partition is not empty.
+![HA-3](https://github.com/user-attachments/assets/3f0626f9-4b27-4629-baa8-69c28c05d3f7)
 
 + Click "Next".
 
 + Confirm the change by clicking "Add HSM". Wait for the new member to be added.
+![HA-4](https://github.com/user-attachments/assets/673d17e3-5907-4541-b72f-4eeeee93a8a5)
 
 + Upon successful completion, you should see a new member added to the list of Configured HSMs.
+![HA-5](https://github.com/user-attachments/assets/db4b58d5-c1f7-4eeb-9c2b-7bab5ebc5f7a)
 
 <br>
 
