@@ -165,7 +165,7 @@ Are you really sure you want to continue? [y/N] y
 
 > [!NOTE]  
 > Upon completion of the RoT setup, you will be required to log in as the user 'admin' with the default password 'admin'. You will be forced to change the password upon successful login.
-> Additionally, you can add more HSMs to your CipherTrust to operate in High Availability mode, which helps ensure optimal uptime. [Click here](CT_rot_luna_network_hsm.md) to go directly to the page for HA configuration.
+> Additionally, you can add more HSMs to your CipherTrust to operate in High Availability mode, which helps ensure optimal uptime. [Click here](CT_rot_luna_network_hsm_ha.md) to go directly to the page for HA configuration.
 
 
 <br>
