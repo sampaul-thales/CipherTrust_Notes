@@ -18,9 +18,14 @@ This section describes how to set up a Luna Network HSM as the Root of Trust (Ro
 
 <br>
 
-### Step 1) Preparing keys and certificates.
+### Step 1) Generating Client certificate for the CipherTrust Manager.
 
 #### - Generating client key and certificate for your CipherTrust Manager.
+> [!CAUTION]
+> This step is only required to be performed once.
+> Executing this command overwrites any existing client certificate.
+> You do not need to execute this command if a client certificate has already been generated.
+
 <pre>
 sampaul@ct-ub2204:~$ vtl createcert -n vciphertrust-i.daenerys.home -c CA -s BC -o Thales -u Sales Engineering -l Vancouver
 vtl (64-bit) v10.7.2-16. Copyright (c) 2024 Thales Group. All rights reserved.
@@ -28,6 +33,7 @@ vtl (64-bit) v10.7.2-16. Copyright (c) 2024 Thales Group. All rights reserved.
 Private Key created and written to: /usr/safenet/lunaclient/cert/client/vciphertrust-i.daenerys.homeKey.pem
 Certificate created and written to: /usr/safenet/lunaclient/cert/client/vciphertrust-i.daenerys.home.pem
 </pre>
+
 
 #### - Import server certificate from the Network HSM.
 <pre>
@@ -140,7 +146,7 @@ Are you really sure you want to continue? [y/N] y
 <br><br>
 
 ### Setup RoT for CipherTrust using CipherTrust Web UI.
-+ Login as an administrator.
++ Log in as an administrator.
 + Expand "Admin Settings" > "Root of Trust".
 + Read the warning that resetting CipherTrust Manager will delete all existing data. Click 'Yes, configure an HSM' if you are prepared to proceed with the reset.
 ![P1](https://github.com/user-attachments/assets/c1b55987-9233-4be0-b040-320164dda014)
@@ -159,5 +165,7 @@ Are you really sure you want to continue? [y/N] y
 
 > [!NOTE]  
 > Upon completion of the RoT setup, you will be required to log in as the user 'admin' with the default password 'admin'. You will be forced to change the password upon successful login.
+
+<br>
 
 [Back to previous page](README.md)
