@@ -129,5 +129,6 @@ sampaul@ct-ub2204:~$ ksctl cluster nodes list | grep host
                         "host": "10.164.50.17",
 </pre>
 
+<br>
 
 [Back to previous page](README.md)
