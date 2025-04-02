@@ -14,7 +14,7 @@ This section of my notes describes how to set up the Root of Trust (RoT) for Cip
 + You must have the service client zip downloaded from the DPoD portal.
 + DPoD instance/partition/tile must be initialized with a Crypto Officer password.
 
-<br>
+<br><br>
 
 ### Configuring DPoD as the RoT for CipherTrust using WeB UI.
 
@@ -44,9 +44,7 @@ This section of my notes describes how to set up the Root of Trust (RoT) for Cip
 + Expand "Admin Settings" > "Root of Trust" again. You should now see your DPoD instance listed as a configured Root of Trust.
 ![S7](https://github.com/user-attachments/assets/b402f8b1-876d-4621-a848-e71f32bb6be7)
 
-
-
-
+<br><br>
 
 ### Configuring DPoD as the RoT for CipherTrust using ksctl utility.
 
@@ -104,12 +102,6 @@ WARNING - Reset is a destructive operation and will wipe all data in the CipherT
 Are you really sure you want to continue? [y/N] y
 </pre>
 
-#### - Output displayed after the Root of Trust (RoT) configuration is complete using KSCTL.
-<pre>
-{
-
-}
-</pre>
 + CipherTrust Manager might take 2-3 minutes to finish resetting.
 + Once reset, you will be required to login using default username "admin" and password "admin".
 + You will be prompted to change the password upon login.
