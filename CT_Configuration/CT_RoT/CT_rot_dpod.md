@@ -23,20 +23,26 @@ This section of my notes describes how to set up the Root of Trust (RoT) for Cip
 + Expand "Admin Settings" > "Root of Trust".
 
 + When setting up RoT for the first time, a warning will appear. Click "Yes, configure an HSM" when you're ready.
+![S1](https://github.com/user-attachments/assets/f3e4687c-ceb1-4397-b4a1-15c5d07fc480)
 
 + Select "Thales" DPoD from the list of supported HSMs.
+![S2](https://github.com/user-attachments/assets/e57e027f-b23a-43b6-8415-6ee9ad7dc87a)
 
 + Enter the label of your DPoD instance(partition) in the "Partition Name" field, and enter crypto officer password in the "HSM Partition Password" field.
 
 + Click browse and upload the setup ZIP file you downloaded from your DPoD customer portal. Click "Next" when ready.
+![S3](https://github.com/user-attachments/assets/86b928d8-2630-47d5-b2fb-9afb2511d9f8)
 
 + A warning about CipherTrust Manager being reset will appear. Click "Confirm loss of key material and system restart!" if you're prepared.
+![S4](https://github.com/user-attachments/assets/74aedd20-b2c0-448a-bf22-4466427781a3)
 
 + Wait for CipherTrust Manager to validate and apply the changes. This may take 2-3 minutes to complete.
+![S6](https://github.com/user-attachments/assets/24f0ebe3-cbad-4df7-a82a-dd27514c80df)
 
 + Once finished, the login page will appear. Log in using the default username 'admin' and password 'admin'. You will be prompted to change the default password upon login.
 
 + Expand "Admin Settings" > "Root of Trust" again. You should now see your DPoD instance listed as a configured Root of Trust.
+![S7](https://github.com/user-attachments/assets/b402f8b1-876d-4621-a848-e71f32bb6be7)
 
 
 
@@ -84,7 +90,7 @@ password:
 #### - Execute ksctl command as follows to configure RoT.
 <pre>
 sampaul@ct-ub2204:~$ ksctl hsm setup dpod \
-> --reset --co-password userpin123 --partition-name SP_ROT \
+> --reset --co-password userpin123 --partition-name SP_SIGN \
 > --auth-token-client-id < --- REDACTED CLIENT ID --- > \
 > --auth-token-client-secret < --- REDACTED CLIENT SECRET --- > \
 > --auth-token-config-uri  < --- REDACTED URL --- >\
