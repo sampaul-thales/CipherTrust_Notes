@@ -10,6 +10,10 @@ This section of my notes describes how to set up a cluster of two or more Cipher
 > + All nodes must use the same firmware version.
 > + Maximum size of a cluster is 20.
 
+> [!IMPORTANT]
+> Clustering CipherTrust Manager also changes the lock codes used for licence activation.
+> All nodes in the cluster will have the same Connector Lock Code once clustering is complete.
+> Please ensure that clustering is performed before activating the licences.
 
 <BR>
 
