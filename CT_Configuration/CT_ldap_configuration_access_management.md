@@ -75,8 +75,11 @@ dn: cn=Bruce Wayne,ou=People,dc=openldap,dc=home
 + For LDAPS, you need to upload the CA certificates (Server Certificates) for verification, else Tick "Disable verifying the server certificate".
 + Tick "Disable Automatic Creation of a User" if you don't want LDAP users to be automatically added upon successful login.
 + Enter Username and Password for testing and click "Test Connection.".
+
 ![ld2](https://github.com/user-attachments/assets/06afee36-9b3f-4651-9a57-160e11c7079e)
+
 + If the connection test is successful, click "Add LDAP" to complete the configuration.
+
 ![ld1](https://github.com/user-attachments/assets/14fefa1b-bd18-4233-8840-9de699cf5a89)
 
 ![LD3](https://github.com/user-attachments/assets/b437dec1-43c7-4298-9d26-d0eba01a63f9)
@@ -199,7 +202,7 @@ password:
 
 </pre>
 
-#### - Upon succesfull login, you should be able to see a new user registered for access mananagement.
+#### - Upon successful login, you should be able to see a new user registered for access mananagement.
 > [!NOTE]  
 > When **--disable-auto-create** is used during creation of LDAP connection, new users will not be created automatically.
 > In that case, you will need to add that user manually.
