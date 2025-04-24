@@ -22,6 +22,8 @@ This section of my notes demonstrates how to configure LDAP on CipherTrust Manag
 | GUID FIELD | uidNumber | used for finding users who are part of a group. |
 | GROUP MEMBER FIELD | gidNumber | used for finding group that a user is part of. |
 
+<br>
+
 #### - LDAP search query to list all groups in LDAP.
 <pre>
 sampaul@ct-ub2204:~$ ldapsearch -H ldaps://openldap.home -D "cn=admin,dc=openldap,dc=home" -W -b "dc=openldap,dc=home" "(objectClass=posixGroup)" | grep cn
@@ -73,7 +75,12 @@ dn: cn=Bruce Wayne,ou=People,dc=openldap,dc=home
 + For LDAPS, you need to upload the CA certificates (Server Certificates) for verification, else Tick "Disable verifying the server certificate".
 + Tick "Disable Automatic Creation of a User" if you don't want LDAP users to be automatically added upon successful login.
 + Enter Username and Password for testing and click "Test Connection.".
+![ld2](https://github.com/user-attachments/assets/06afee36-9b3f-4651-9a57-160e11c7079e)
 + If the connection test is successful, click "Add LDAP" to complete the configuration.
+![ld1](https://github.com/user-attachments/assets/14fefa1b-bd18-4233-8840-9de699cf5a89)
+
+![LD3](https://github.com/user-attachments/assets/b437dec1-43c7-4298-9d26-d0eba01a63f9)
+
 
 #### STEP 2: <ins>Adding User Account from LDAP.</ins>
 + Click on "Access Management" > "Users" > "Add Users".
@@ -81,12 +88,15 @@ dn: cn=Bruce Wayne,ou=People,dc=openldap,dc=home
 + Select the connection from the "LDAP Connections" dropdown.
 + Enter the "Username" and other optional details.
 + Click "Add User" to create the LDAP user.
+![LD4](https://github.com/user-attachments/assets/1e507c6d-a809-4720-bf4e-25a3aad401c7)
 + Once the user account has been successfully added, you should see the updated Users screen.
+![LD5](https://github.com/user-attachments/assets/7ab0f02d-0afa-4dcb-b605-1069ddc1a182)
 
 #### STEP 3: <ins>Test login using ldap user.</ins>
 
 + To Log in as LDAP user, you must enter the connection name followed by the | symbol and the username. For example "openldap.home|spaul" for username.
 + Enter your LDAP user password and click "Log In".
+![LD6](https://github.com/user-attachments/assets/0fc36783-787b-477b-9b81-3fd40c45b349)
 
 <br>
 
