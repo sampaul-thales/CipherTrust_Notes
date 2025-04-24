@@ -8,7 +8,7 @@ This section contains notes containing instruction on how to configure various c
 + [Configuring KSCTL utility.](CT_ksctl_configuration.md)
 + [Configuring a Cluster.](CT_clustering.md)
 + [Configuring Root of Trust.](CT_RoT/README.md)
-
++ [Configuring LDAP for Access Management.](CT_ldap_configuration_access_management.md)
 <br>
 
 [Back to main page](../README.md)
