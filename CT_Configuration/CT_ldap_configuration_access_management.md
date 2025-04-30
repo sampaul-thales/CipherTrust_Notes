@@ -78,13 +78,13 @@ uidNumber: 1003
 + Tick "Disable Automatic Creation of a User" if you don't want LDAP users to be automatically added upon successful login.
 + Enter Username and Password for testing and click "Test Connection.".
 
-![ld2](https://github.com/user-attachments/assets/06afee36-9b3f-4651-9a57-160e11c7079e)
+![ld1](https://github.com/user-attachments/assets/b0f783e5-5dbf-4252-8eb3-9350efbac57e)
 
 + If the connection test is successful, click "Add LDAP" to complete the configuration.
 
-![ld1](https://github.com/user-attachments/assets/14fefa1b-bd18-4233-8840-9de699cf5a89)
+![ld2](https://github.com/user-attachments/assets/30fdaee3-f5bd-4b82-b300-7b79ecec10ec)
 
-![LD3](https://github.com/user-attachments/assets/b437dec1-43c7-4298-9d26-d0eba01a63f9)
+![LD3](https://github.com/user-attachments/assets/eda07115-1f99-424c-8312-134f2485810b)
 
 
 #### STEP 2: <ins>Adding User Account from LDAP.</ins>
@@ -94,17 +94,17 @@ uidNumber: 1003
 + Enter the "Username" and other optional details.
 + Click "Add User" to create the LDAP user.
 
-![LD4](https://github.com/user-attachments/assets/1e507c6d-a809-4720-bf4e-25a3aad401c7)
+![LD4](https://github.com/user-attachments/assets/e8238816-7b7f-4f90-8472-6409cb62f9e8)
 + Once the user account has been successfully added, you should see the updated Users screen.
 
-![LD5](https://github.com/user-attachments/assets/7ab0f02d-0afa-4dcb-b605-1069ddc1a182)
+![LD5](https://github.com/user-attachments/assets/40948b9c-8896-45a9-9662-2295ed69c07c)
 
 #### STEP 3: <ins>Test login using ldap user.</ins>
 
 + To Log in as LDAP user, you must enter the connection name followed by the | symbol and the username. For example "openldap.home|spaul" for username.
 + Enter your LDAP user password and click "Log In".
 
-![LD6](https://github.com/user-attachments/assets/0fc36783-787b-477b-9b81-3fd40c45b349)
+![LD6](https://github.com/user-attachments/assets/6735c17a-2ad6-4628-96bc-078ad4208d1f)
 
 <br>
 
