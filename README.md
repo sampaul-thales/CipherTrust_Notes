@@ -6,6 +6,7 @@ I've created this repository to upload all my notes related to the CipherTrust p
 
 ### Table of Content
 
-+ Introduction to CipherTrust.
-+ [Configuring CipherTrust.](CT_Configuration/README.md)
++ Introduction to CipherTrust Platform.
++ [Configuring CipherTrust Manager.](CT_Configuration/README.md)
++ [CipherTrust Cloud Key Manager](CCKM/README.md)
 
