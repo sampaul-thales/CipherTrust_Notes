@@ -27,13 +27,21 @@ sampaul@ct-ub2204:~$ ls -l
 
 - Log in to CipherTrust Manager.
 - Click on **Access Management** on the left, then select **Connections**.
+
+![ss1](https://github.com/user-attachments/assets/c8487d97-1e34-49f1-a1e7-c978ddbc3011)
+
 - Under **Internal Connection**, click **Add HSM Server**.
     + Enter your HSM's hostname or IP address
     + Upload the Luna HSM server certificate
     + Add an optional description.
     + Tick the Cloud Key Manager option
     + Click **Add HSM Server**.
+
+![ss2](https://github.com/user-attachments/assets/1e03a35c-e49e-441e-ab63-f59195442b7b)
+
 - You should now see the newly added Luna HSM server.
+![ss3](https://github.com/user-attachments/assets/4f73aa85-d253-4e62-8d2a-a0b02b62c072)
+
 - Next, click **Download Luna Client Cert** to download the CCKM Lunaclient certificate.
 - Upload the downloaded CCKM client certificate to the HSM as shown below:
 <pre>
@@ -58,7 +66,13 @@ Pseudo-terminal will not be allocated because stdin is not a terminal.
 ### Step 2 : Add Connection to Luna Partition for CCKM.
 
 - Click on **Access Management** on the left, select **Connections** and then Click **Add Connection** on the right.
+
+![ss4](https://github.com/user-attachments/assets/74778f31-7b07-486a-bd20-681afdc84fea)
+
 - Choose "HSM" as the category, and select **Luna Network Connection** as the hsm type.
+
+![ss5](https://github.com/user-attachments/assets/9b2f0a43-fa74-4962-a447-c696ca9ae924)
+
 - In the General Info section, fill in the name and description, then click **Next**.
 - Enter the *Crypto officer* password in **Partition Password** field.
 - Select the Luna HSM server from the dropdown menu, provider enter the **Partition Label** and **Serial Number**. 
@@ -75,8 +89,16 @@ Partition            Name                              Version      Objects  Tot
 </pre>
 
 - Click on **Test Credentials** to verify that the *Crypto Officer* password is correct. Click **Next** when you're ready to proceed.
-- Tick the **Cloud Key Manager** optioon, then click "Add Connection".
+
+![ss6](https://github.com/user-attachments/assets/12b39b28-3ed8-48a0-9fa8-bc22c3b8fea4)
+
+- Tick the **Cloud Key Manager** option, then click "Add Connection".
+
+![ss7](https://github.com/user-attachments/assets/c130a459-f3aa-4866-b653-8da4add480ed)
+
 - You should now see the new connection listed. Optionally, you can use "Test Connection" to confirm that the connection works.
+
+![ss8](https://github.com/user-attachments/assets/69bfa834-33fa-4512-99fd-144c73c33058)
 
 <br>
 
@@ -93,6 +115,9 @@ Partition            Name                              Version      Objects  Tot
 ### Step 4 :  Refreshing keys.
 - Under **Cloud Keys** category on the left, select **Luna**.
 - Click on **Refresh All** option on the right, and wait for CCKM to update the list of keys stored in the Luna HSM partition.
+
+![ss9](https://github.com/user-attachments/assets/929da0ae-77dc-4796-96ec-7ceaedbe199d)
+
 - The time required to refresh the keys depends on the number of keys in the Luna Partition and the network latency.
 
 <br>
