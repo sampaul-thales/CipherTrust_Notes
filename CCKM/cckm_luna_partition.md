@@ -106,9 +106,14 @@ Partition            Name                              Version      Objects  Tot
 - Click **Products** options on the left and select **Cloud Key Manager**.
 - Under **KMS Containers** section, select **Luna HSM Partitions**.
 - Click **+ Add Partition** option on the right.
-- On the "Add Existing Partition" screen, choose the connection that you added from the **Select Connection** dropdown. 
+- On the "Add Existing Partition" screen, choose the connection that you added from the **Select Connection** dropdown.
+
+![ss10](https://github.com/user-attachments/assets/3cfd9537-aa15-4104-8bb0-fcefebfa1642)
+
 - Once selected, the label of the partition assigned to the CCKM client should be displayed. Click **Add** to proceed.
 - You should now see the newly added partition listed.
+
+![ss11](https://github.com/user-attachments/assets/94322ae3-20bb-4846-a933-de26cbd8ce01)
 
 <br>
 
@@ -119,6 +124,8 @@ Partition            Name                              Version      Objects  Tot
 ![ss9](https://github.com/user-attachments/assets/929da0ae-77dc-4796-96ec-7ceaedbe199d)
 
 - The time required to refresh the keys depends on the number of keys in the Luna Partition and the network latency.
+
+![ss12](https://github.com/user-attachments/assets/589f49df-6489-4110-b720-e7676821a4fb)
 
 <br>
 
