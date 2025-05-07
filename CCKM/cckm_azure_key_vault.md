@@ -88,7 +88,8 @@ In this section, I will demonstrate how to setup CKKM to manage keys in Azure Ke
 - Enter the **Client ID** and **Tenant ID** obtained during the CCKM application registration.
 - Select your **Cloud Name** and choose the **Authentication** method (either *Client Secret* or *Certificate).
 - Click **Test Credentials** to validate the information. If you see *Status: OK*, Click **Next**.
-![SS_6](https://github.com/user-attachments/assets/0abbe838-3ec4-4dd8-93d5-c474459ece6f)
+![SS_6](https://github.com/user-attachments/assets/59e9bec9-91a3-44d1-a834-0e5e0aefdf53)
+
 
 - In the **Add Products** section, tick **Cloud Key Manager**, then click **Add connection**.
 ![SS_7](https://github.com/user-attachments/assets/0ff914dd-5736-4c48-8e2c-9013f0b10a9b)
