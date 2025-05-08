@@ -16,7 +16,7 @@ This section demonstrates how to use CCKM to generate keys within Azure Key Vaul
 - A new page titled *Add Azure Key* will appear. Under **Select Method**, choose **Create/Upload New Key Material**.
 - Set the source to **Microsoft Azure (Native)**, then click **Next**.
 
-  ![SS2](https://github.com/user-attachments/assets/71edb449-c37c-4b98-8090-a5e04d5fffb0)
+![SS2](https://github.com/user-attachments/assets/71edb449-c37c-4b98-8090-a5e04d5fffb0)
 - In the **Configure Source Key** section:
     + Enter a key label under **Azure Key Name**. 
     + Select your **Azure Key Vault**.
