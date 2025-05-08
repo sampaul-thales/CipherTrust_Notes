@@ -4,8 +4,10 @@
 
 In this section of my notes, I will demonstrate how to use CCKM with various cloud providers.
 
-- [Manage Luna HSM Partition using CCKM.](cckm_luna_partition.md)
-- [Manage Azure Key Vault using CCKM.](cckm_azure_key_vault.md)
+- [Manage Luna HSM Partition.](cckm_luna_partition.md)
+- Manage Azure Key Vault.
+  + [Configuring Azure Key Vault.](cckm_configure_azure_key_vault.md)
+  + [Generating Keys.](cckm_azure_key_vault_generate_keys.md)
 <BR>
 
 [Back to the Main page](../README.md)
