@@ -89,7 +89,7 @@ Connection to vciphertrust-i.daenerys.home closed.
 
 #### Step 5: Log in to CipherTrust Manager once it has rebooted. The upgraded version number will be displayed on the login banner.
 <pre>
-C:\Users\sampaul\Downloads>ssh -i C:\Users\sampaul\Dojo\LAB\CTM.key ksadmin@vciphertrust-i.daenerys.home
+C:\Users\sampaul\Downloads>ssh -i CTM.key ksadmin@vciphertrust-i.daenerys.home
 
 #####################################################################################################
 
@@ -113,3 +113,4 @@ Last login: Tue Sep  2 14:25:36 2025 from 172.16.20.2
 <br>
 
 [Back to previous page](README.md)
+
